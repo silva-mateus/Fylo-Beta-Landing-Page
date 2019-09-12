@@ -179,12 +179,15 @@ button:hover {
   }
 
   .logo {
+    width: 200px;
+    height: 70px;
     background: url("../images/logoMobile.svg") no-repeat;
     background-size: 100%;
-    left: 7%;
+    left: 15%;
   }
 
   .right header {
+    padding: 100px 0 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -192,20 +195,43 @@ button:hover {
   }
 
   .right .content {
-    margin: 20px 7%;
+    margin: 20px 15%;
   }
 
   .h1-header {
+    font-size: 4rem;
     padding: 0;
     margin-bottom: 14px;
   }
 
+  p {
+    font-size: 1.5rem;
+  }
+
+  p .content {
+    margin-right: 15%;
+    position: absolute;
+    right: 0px;
+    margin-left: 15%;
+    left: 0px;
+  }
+
+  .h3-header {
+    font-size: 2rem;
+    padding: 100px 0 10px;
+  }
+
   .media {
-    right: 7%;
+    right: 15%;
   }
 
   .media a {
     color: #fff;
+  }
+
+  .icons {
+    font-size: 2rem;
+    padding: 0 0 0 40px;
   }
 
   .form {
@@ -220,23 +246,31 @@ button:hover {
 
   input[type="email"] {
     padding: 8px 0;
-    font-size: 21px;
+    font-size: 28px;
     height: 40px;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   button[type="submit"] {
     margin: 10px 0;
+    font-size: 1.5rem;
+    height: 62px;
   }
 
-.footer{
-  position: relative;
-  bottom: 0;
-  right: 0;
-  /* padding: 7%; */
-  margin: 7% 7% 100px;
-}
-  .footer a{
+  .footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    /* padding: 7%; */
+    margin: 7% 15% 100px;
+  }
+
+  .footer a {
+    font-size: 1.2rem;
     position: absolute;
     right: 0;
     bottom: 0;
