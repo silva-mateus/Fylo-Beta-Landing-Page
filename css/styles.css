@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -15,14 +14,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h1-header {
-  font-size: 3.5rem;
+  font-size: 2rem;
   line-height: 1.5;
-  width: 95%;
+  width: 100%;
 }
 
 .h3-header {
   padding: 60px 0 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 header {
@@ -31,25 +30,24 @@ header {
 }
 
 p {
+  padding-top: 40px;
   color: #aaa;
-  font-size: 1.2rem;
+  font-size: .9rem;
   font-weight: 400;
-  width: 70%;
+  width: 85%;
 }
 
 input[type="email"] {
-  padding: 9px;
+  padding: 3px;
   font-size: 21px;
   border: 0;
   box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.1);
-  height: 60px;
-  margin-bottom: 20px;
+  height: 40px;
   width: 60%;
 }
 
 button[type="submit"] {
-  padding: 10px 0;
-  height: 60px;
+  height: 40px;
   width: 30%;
   border: 0;
   background: #06d79d;
@@ -70,13 +68,13 @@ button:hover {
   display: flex;
   flex-flow: row;
   position: relative;
+  min-height: 100vh;
 }
 
 .left,
 .right {
   flex-grow: 1;
   max-width: 50%;
-  min-height: 100vh;
 }
 
 .left {
@@ -90,7 +88,7 @@ button:hover {
 }
 
 .logo {
-  width: 150px;
+  width: 100px;
   height: 50px;
   background: url("../images/logo.svg") no-repeat;
   background-size: 100%;
@@ -99,7 +97,6 @@ button:hover {
 }
 
 .images {
-  height: 100vh;
   width: 100%;
   background: linear-gradient(31deg, rgba(101, 96, 178, 1) 0%, rgba(25, 17, 116, 1) 100%);
   display: flex;
@@ -113,6 +110,7 @@ button:hover {
 }
 
 .icons {
+  font-size: 1.2rem;
   padding: 0 0 0 15px;
 }
 
@@ -121,7 +119,7 @@ button:hover {
 }
 
 .content {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .form {
@@ -139,28 +137,33 @@ button:hover {
 }
 
 .footer {
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #000;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
   text-align: right;
 }
 
+.footer a {
+  font-weight: 400;
+  font-size: .7rem;
+  color: #000;
+}
+
 /* Media Queries */
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 700px) {
   .flex-box {
     flex-flow: column;
   }
 
   .left,
   .right {
+    padding: 0;
     width: 100%;
     max-width: 100%;
     min-height: 80vh;
   }
 
   .left {
-    padding: 0;
     background: url("../images/illustration-main.svg") no-repeat center,
       url("../images/bg-intro.svg");
     background-size: 55vw, 100% 100%;
@@ -174,7 +177,7 @@ button:hover {
   .logo {
     background: url("../images/logoMobile.svg") no-repeat;
     background-size: 100%;
-    left: 49px;
+    left: 7%;
   }
 
   .right header {
@@ -182,21 +185,19 @@ button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 49px 0;
   }
 
   .right .content {
-    margin-top: 0;
+    margin: 20px 7%;
   }
 
   .h1-header {
     padding: 0;
-    font-size: 3.5rem;
     margin-bottom: 14px;
   }
 
   .media {
-    right: 49px;
+    right: 7%;
   }
 
   .media a {
@@ -208,26 +209,32 @@ button:hover {
     justify-content: flex-start;
   }
 
-  .input {
-    width: 100%;
-  }
-
   .submit {
     width: 133px;
     height: 41px;
   }
 
   input[type="email"] {
-    font-size: 35px;
-    height: 48px;
+    padding: 8px 0;
+    font-size: 21px;
+    height: 40px;
     width: 100%;
   }
 
   button[type="submit"] {
-    margin: 0;
+    margin: 10px 0;
   }
 
-  .footer{
-    margin-top: 40px;
+.footer{
+  position: relative;
+  bottom: 0;
+  right: 0;
+  /* padding: 7%; */
+  margin: 7% 7% 100px;
+}
+  .footer a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
