@@ -115,7 +115,7 @@ button:hover {
 }
 
 .icons:hover {
-  color: #06d79d
+  color: #06d79d;
 }
 
 .content {
@@ -147,6 +147,10 @@ button:hover {
   font-weight: 400;
   font-size: .7rem;
   color: #000;
+}
+
+.footer a:hover {
+  color: #06d79d;
 }
 
 /* Media Queries */
